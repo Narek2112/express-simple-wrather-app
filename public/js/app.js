@@ -24,7 +24,7 @@ $weatherForm.addEventListener('submit' , (e)=>{
     
     const location = $search.value
    
-    const url = window.location.href + `weather?address=${location}`;
+    const url =  `/weather?address=${location}`;
    
     fetch(url).then( (res)=>{
         res.json().then( (data)=>{
